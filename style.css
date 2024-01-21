@@ -1,0 +1,135 @@
+header{
+    background-color: aqua;
+    width: 1240px;
+    height: 100px;
+    border: 3px deepskyblue;
+    border-style: dashed;
+}
+
+li, a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.Menu{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.Menu li{
+    width: 200px;
+    background-color: beige;
+    padding: 10px 20px;
+    border: 0.1px solid white;
+    position: relative;
+}
+
+.Menu a{
+    color: darkgreen;
+}
+
+.Menu li:hover{
+    background-color: chartreuse;
+}
+
+.Menu_Child{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -42px;
+}
+
+.Menu_Child li{
+    width: 170px;
+}
+
+.Menu li:hover .Menu_Child{
+    display: block;
+}
+
+.Sidebar{
+    width: 200px;
+    height: 522px;
+    float: left;
+}
+
+.Sidebar_List{
+    background-color: cornflowerblue;
+}
+
+.Sidebar_List p{
+    padding: 10px 20px;
+    border: 0.5px solid white;
+    margin: 0px;
+    color: white;
+}
+
+.Sidebar_List ul{
+    margin: 1px;
+}
+
+.Sidebar_List li{
+    list-style: square;
+    color: white;
+}
+
+.Sidebar_Img{
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+}
+
+.Sidebar_Img p{
+    color: white;
+    padding: 5px 44px;
+    margin: 0px auto 10px auto;
+    background-color: dodgerblue;
+}
+
+.Sidebar_Img div{
+    width: 160px;
+    height: 90px;
+    margin: 5px auto 5px 20px;
+    border: 3px solid snow;
+}
+
+.Image{
+    width: 1047px;
+    height: 140px;
+    background-color: blue;
+    margin-left: 200px;
+}
+
+.Image img{
+    border: 1px solid white;
+}
+
+.Content{
+    width: 1047px;
+    height: 382px;
+    background-color: powderblue;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Content_Row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Content_Row div{
+    width: 200px;
+    height: 120px;
+    border: 3px solid snow;
+}
+
+footer{
+    background-color: azure;
+    text-align: center;
+    position: sticky;
+    bottom: 0px;
+    padding: 3px;
+}
